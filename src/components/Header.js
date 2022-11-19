@@ -15,6 +15,7 @@ import HdrAutoIcon from '@mui/icons-material/HdrAuto';
 
 import Search from '@mui/icons-material/Search';
 
+
    const pages = ['Dashboard', 'Internal Boats', 'External Boats', 'Login', 'Register'];
 
 const Header = () => {
@@ -119,13 +120,13 @@ const Header = () => {
             </Button>
           ))}
         </Box>
-        <TextField  InputProps={{
+        <TextField  size="small"   hiddenLabel autoFocus InputProps={{
           startAdornment: (           
             <Search style={{ color: 'white' }}/>        
           ),
         }} label="Search"  type="search"   sx={{       "& .MuiFormLabel-root": {
           color: 'white'
-      },input: { color: 'white' ,width: {xs:100, lg:200} } }}   variant="standard" />
+      },input: { color: 'white'  ,width: {xs:50, lg:200} } }}   variant="standard" />
     
 
     </Toolbar>
