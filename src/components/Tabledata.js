@@ -26,7 +26,7 @@ const rows = [
 export default function Tabledata() {
   return (
     
-    <Box display="flex"  alignitems="center" height="60vh"  mx={5} mt={5} justifyContent="center"  >
+    <Box display="flex"  alignitems="center"   mx={5} mt={5} justifyContent="center"  >
     <TableContainer   component={Paper}>
       <Table size="small" aria-label="a dense table">
 
@@ -42,7 +42,7 @@ export default function Tabledata() {
      <TableHead>
         <TableRow>
         {headers.map((row,index) => (       
-         <TableCell key={row.index} align="center">{row}</TableCell>
+         <TableCell key={index} align="center">{row}</TableCell>
        ))}         
         </TableRow>
      </TableHead>
@@ -52,7 +52,7 @@ export default function Tabledata() {
         <TableBody  >
           {rows.map((row,index) => (
             <TableRow 
-              key={row.index}
+              key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
             <TableCell align="center" >{row.id}</TableCell>
